@@ -6,9 +6,11 @@ type Greeting = {
 }
   
 export default async function Back() {
-  const baseUrl = "https://nextmongo-j56p9yzwd-margrets-projects.vercel.app"
+  const baseUrl = "https://nextmongo-silk.vercel.app"
   const response = await fetch(`${baseUrl}/api`)
-  const greetings: Greeting[] = await response.json()
+  console.log(`${baseUrl}/api`)
+  console.log (await response.text())
+  const greetings: Greeting[] = [] //await response.json()
   return (
     <div>
       {greetings.map(greetingObj=>
