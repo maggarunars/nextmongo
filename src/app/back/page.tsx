@@ -4,7 +4,7 @@ type Greeting = {
   greeting:string;
   _id: string;
 }
-/*    
+  
 export default async function Back() {
   const baseUrl = "nextmongo-1ql6hedud-margrets-projects.vercel.app"
   const response = await fetch(`${baseUrl}/api`)
@@ -16,9 +16,4 @@ export default async function Back() {
       )}
     </div>
   )
-} */
-
-export default async function Back () {
-    return ( <div>halló</div>)
-
 }
